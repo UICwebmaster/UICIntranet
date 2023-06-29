@@ -18,8 +18,11 @@ function Navbar() {
           </div>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img src="../../public/uic_2012 (1).jpg" />
+              <div className="w-10 rounded-full w-20">
+                <img
+                  className="w-full h-auto max-h-full"
+                  src="/uic_logo_quadri-62c06.png"
+                />
               </div>
             </label>
             <ul
