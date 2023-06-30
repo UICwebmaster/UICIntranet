@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useFetch } from "@/utils/hooks";
+import { useFetch } from "@/app/utils/hooks/page";
 
 const Reprographie = () => {
   const router = useRouter();
