@@ -1,11 +1,14 @@
 import React from "react";
+import Link from "next/link";
 
 function Navbar() {
   return (
     <div data-theme="aqua">
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Intranet</a>
+          <Link href="/" className="btn btn-ghost normal-case text-xl">
+            Formulaires
+          </Link>
         </div>
 
         <div className="flex-none gap-2">
