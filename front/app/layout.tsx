@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Tab from "./components/Tab/Tab";
 import Menu from "./components/Menu/Menu";
+import Navbar2 from "./components/Navbar2/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body className={inter.className}>
-        <Navbar />
-        <Tab />
+        <Navbar2 />
+        {/* <Tab /> */}
         {children}
 
         <Footer />
