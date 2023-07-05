@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Tab from "./components/Tab/Tab";
 import Menu from "./components/Menu/Menu";
-import Navbar2 from "./components/Navbar2/Navbar";
+import Navbar2 from "./components/Navbar/Navbar";
 
 export const metadata = {
   title: "Intranet",

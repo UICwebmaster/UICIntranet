@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Image1 from "../public/uic_2012 (1).jpg";
-import Menu from "./components/Menu/Menu";
-import Table from "./components/Table/Table";
 
 export default function Home() {
   return (
