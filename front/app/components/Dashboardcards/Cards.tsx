@@ -9,7 +9,7 @@ interface CardProps {
 const Cards: React.FC<CardProps> = ({ title, imageSrc }) => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl image-full">
-      <figure>
+      <figure className="w-full h-40 md:h-56">
         <Image src={imageSrc} alt="{imageAlt}" />
       </figure>
       <div className="card-body">

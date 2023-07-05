@@ -10,16 +10,16 @@ export default function Dashboard() {
   const navBarTitles: string[] = [
     "Reprographie",
     "Voyages",
-    "Etf",
+    "ETF",
     "Traduction",
-    "Uicp",
+    "UICP",
   ];
   const imageSources: { [key: string]: StaticImageData } = {
     Reprographie: ImageRepro,
     Voyages: ImageVoyage,
-    Etf: ImageEtf,
+    ETF: ImageEtf,
     Traduction: ImageTraduction,
-    Uicp: ImageUicp,
+    UICP: ImageUicp,
   };
 
   return (
