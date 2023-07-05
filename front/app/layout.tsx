@@ -1,12 +1,10 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+import "./styles/globals.css";
+
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Tab from "./components/Tab/Tab";
 import Menu from "./components/Menu/Menu";
 import Navbar2 from "./components/Navbar2/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Intranet",
@@ -20,12 +18,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light">
-      <body className={inter.className}>
-        <Navbar2 />
-        {/* <Tab /> */}
-        {children}
+      <body>
+        <div>
+          <Navbar2 />
+        </div>
 
-        <Footer />
+        <div className="container mx-auto" style={{ marginBottom: "100px" }}>
+          {children}
+        </div>
+
+        <div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,8 +1,10 @@
 import React from "react";
+import Link from "next/link";
+import Image from "../../../public/uic_logo_quadri-62c06.png";
 
 function Navbar2() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 flex items-center justify-center">
       <div className="navbar-start">
         <div className="dropdown ">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,14 +29,6 @@ function Navbar2() {
           >
             <li>
               <a>Parent</a>
-              <ul className="p-3">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
             </li>
             <li>
               <a>Parent</a>
@@ -104,33 +98,28 @@ function Navbar2() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Formulaires</a>
+        <a className="btn btn-ghost normal-case text-xl" href="/">
+          Formulaires
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li tabIndex={0}>
-            <details>
-              <summary>Dashboard</summary>
-              <ul className="p-2">
-                <li>
-                  <button className="btn-sm">test</button>
-                </li>
-                <li>
-                  <button className="btn-sm">test2</button>
-                </li>
-              </ul>
-            </details>
+            <a href="/dashboard">Dashboard</a>
           </li>
           <li tabIndex={0}>
             <details>
               <summary>Reprographie</summary>
               <ul className="p-2">
-                <li>
-                  <button className="btn-sm">Mes demandes</button>
-                </li>
-                <li>
+                <div>
+                  <Link href="/reprographie">
+                    <button className="btn-sm">Mes demandes</button>
+                  </Link>
+                </div>
+
+                <Link href="/reprographie/nouvelledemande">
                   <button className="btn-sm">Nouvelle demande</button>
-                </li>
+                </Link>
               </ul>
             </details>
           </li>
@@ -167,9 +156,9 @@ function Navbar2() {
                 <li>
                   <button className="btn-sm">Mes demandes</button>
                 </li>
-                <li>
+                <Link href="/traduction/nouvelledemande">
                   <button className="btn-sm">Nouvelle demande</button>
-                </li>
+                </Link>
               </ul>
             </details>
           </li>
@@ -189,7 +178,11 @@ function Navbar2() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <div className="avatar flex">
+          <div className="w-24 rounded">
+            <img src="image" alt="Avatar" />
+          </div>
+        </div>
       </div>
     </div>
   );
